@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - I2F Student Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body class="font-poppins text-gray-800 flex flex-col min-h-screen">
+    <header class="bg-primary text-white">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold">I2F Student Services</a>
+            <button id="mobileMenuButton" class="md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <ul id="mobileMenu" class="hidden md:flex space-x-4">
+                <li><a href="/" class="hover:text-secondary transition-colors duration-300">Home</a></li>
+                <li><a href="service.html" class="hover:text-secondary transition-colors duration-300">Services</a></li>
+                <li><a href="about.html" class="hover:text-secondary transition-colors duration-300">About Us</a></li>
+                <li><a href="contact.html" class="hover:text-secondary transition-colors duration-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="flex-grow">
+        <section class="py-12 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl font-bold text-center mb-8">About I2F Student Services</h1>
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-2xl font-bold mb-4">Our Story</h2>
+                    <p class="mb-6">I2F Student Services was born out of a passion for education and a desire to bridge the gap between Indian students and French universities. Our founders, having experienced the challenges of studying abroad firsthand, recognized the need for a comprehensive support system that goes beyond just admission assistance.</p>
+
+                    <h2 class="text-2xl font-bold mb-4">Our Mission</h2>
+                    <p class="mb-6">At I2F, we believe that every student deserves the opportunity to pursue their dreams, regardless of borders. Our mission is to empower Indian students with the knowledge, support, and resources they need to successfully navigate their educational journey in France.</p>
+
+                    <h2 class="text-2xl font-bold mb-4">What Sets Us Apart</h2>
+                    <ul class="list-disc list-inside mb-6">
+                        <li class="mb-2"><strong>Personalized Approach:</strong> We understand that each student's journey is unique. That's why we offer tailored guidance that considers your individual goals, preferences, and circumstances.</li>
+                        <li class="mb-2"><strong>End-to-End Support:</strong> From university selection to settling into your new life in France, we're with you every step of the way. Our services cover all aspects of your study abroad journey.</li>
+                        <li class="mb-2"><strong>Cultural Bridge:</strong> We don't just help you with paperwork; we prepare you for life in a new culture. Our team provides insights into French customs, lifestyle, and academic expectations to ensure a smooth transition.</li>
+                        <li class="mb-2"><strong>Network of Success:</strong> Join a community of students and alumni who have successfully made the journey from India to France. Benefit from their experiences and build lasting connections.</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-bold mb-4">Our Team</h2>
+                    <p class="mb-6">Our team consists of experienced education consultants, former international students, and local experts in France. This diverse mix of perspectives allows us to provide well-rounded, practical advice to our students.</p>
+
+                    <h2 class="text-2xl font-bold mb-4">Join Us on Your Journey</h2>
+                    <p class="mb-6">Whether you're just starting to consider studying in France or you're ready to make the move, I2F Student Services is here to turn your aspirations into reality. Let's embark on this exciting journey together!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 I2F Student Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobileMenuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Netlify Identity
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+

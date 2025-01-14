@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I2F Student Services - From India to France | Study Abroad Assistance</title>
+    <meta name="description" content="I2F Student Services provides comprehensive assistance for Indian students looking to study in France. From university selection to settling in, we're with you every step of the way.">
+    <meta name="keywords" content="I2F Student Services, study in France, Indian students abroad, university selection, visa assistance, accommodation in France">
+    <meta name="author" content="I2F Student Services">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://i2fstudentservices.com">
+    <meta property="og:title" content="I2F Student Services - Your Path from India to France">
+    <meta property="og:description" content="Comprehensive assistance for Indian students pursuing education in France. University selection, visa help, and more.">
+    <meta property="og:image" content="https://i2fstudentservices.com/og-image.jpg">
+    <meta property="og:url" content="https://i2fstudentservices.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="I2F Student Services - Study in France">
+    <meta name="twitter:description" content="Your complete guide to studying in France. From India to France, we've got you covered.">
+    <meta name="twitter:image" content="https://i2fstudentservices.com/twitter-image.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&family=Muli:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+    <header class="bg-primary text-white fixed w-full z-10">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold">I2F Student Services</a>
+            <button id="mobileMenuButton" class="md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <ul id="mobileMenu" class="hidden md:flex space-x-4">
+                <li><a href="/" class="hover:text-secondary transition-colors duration-300">Home</a></li>
+                <li><a href="service.html" class="hover:text-secondary transition-colors duration-300">Services</a></li>
+                <li><a href="about.html" class="hover:text-secondary transition-colors duration-300">About Us</a></li>
+                <li><a href="contact.html" class="hover:text-secondary transition-colors duration-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pt-20" role="main">
+        <section class="bg-primary text-white py-8 md:py-20 relative" aria-labelledby="hero-heading">
+            <div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('I2Fwebsiteheaderimage.png'); background-size: cover; background-position: center 20%;"></div>
+            <div class="absolute inset-0 bg-black opacity-50 z-10"></div>
+            <div class="container mx-auto text-center relative z-20 px-4 md:px-8 max-w-7xl">
+                <h1 id="hero-heading" class="text-2xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+                    All the way with you, from India to France
+                </h1>
+                <p class="text-base md:text-xl mb-8 max-w-3xl mx-auto">
+                    ANYTHING YOU'RE LOOKING FOR, FROM FINDING THE PERFECT UNIVERSITY
+                    TO AN EASIER WAY TO OPEN A BANK ACCOUNT, I2F CAN HELP YOU!
+                </p>
+                <a href="/contact.html" class="bg-secondary hover:bg-opacity-90 text-white px-6 py-2 md:px-8 md:py-3 rounded-full text-base md:text-lg inline-block transition-all duration-300 hover:shadow-lg cta-button">
+                    BEGIN YOUR JOURNEY
+                </a>
+            </div>
+        </section>
+
+        <section class="py-8 md:py-12 bg-white" aria-label="Mission Statement">
+            <div class="container mx-auto text-center px-4 md:px-8 max-w-7xl">
+                <blockquote class="text-base md:text-lg lg:text-xl text-secondary font-normal italic">
+                    "Our mission is to empower Indian students with the knowledge, support, and resources they need to successfully pursue their educational dreams in France. We believe in breaking down barriers, fostering cultural exchange, and opening doors to global opportunities."
+                </blockquote>
+            </div>
+        </section>
+
+        <section class="py-8 md:py-12 bg-gray-100" aria-label="Services Carousel">
+            <div class="container mx-auto px-4 md:px-8 max-w-7xl">
+                <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center text-primary">Our Services</h2>
+                <div id="carouselContent" class="flex flex-col md:flex-row items-center justify-center"></div>
+                <div class="flex justify-center mt-8">
+                    <button id="prevSlide" class="bg-primary text-white px-4 py-2 rounded-l-full hover:bg-opacity-90 transition-all duration-300">Previous</button>
+                    <button id="nextSlide" class="bg-primary text-white px-4 py-2 rounded-r-full hover:bg-opacity-90 transition-all duration-300">Next</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-8 md:py-12 bg-white" aria-label="Testimonials">
+            <div class="container mx-auto px-4 md:px-8 max-w-7xl">
+                <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center text-primary">What Our Students Say</h2>
+                <div id="testimonialContent" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-white py-6 md:py-8">
+        <div class="container mx-auto text-center px-4 md:px-8 max-w-7xl">
+            <p class="text-sm md:text-base">&copy; 2023 I2F Student Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobileMenuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Carousel data
+        const carouselSlides = [
+            {
+                title: "Studying in france",
+                text: "I2F can help you find the perfect university for you after assessing your needs & analyzing your profile. We also go a step ahead, and guide you with creating an iron-clad application for the university to help you secure admissions.",
+                image: "Studying in France.png"
+            },
+            {
+                title: "Preparing yourself for the big move",
+                text: "You can focus on your goodbyes and mental preparation for moving abroad, while I2F takes care of applying for your visa, helping you find accommodation and guide you with all the documentation necessary to start living in your home away from home.",
+                image: "Preparing yourself for the big move.png"
+            },
+            {
+                title: "Settling-in",
+                text: "I2F will ensure that your settling in process is seamless by taking care of all your documentation needs like visa validation, social security and CAF while also providing you with a welcome package which includes creating a bank account, sim card and all other provisions that can make your student life easier.",
+                image: "Settling-in.png"
+            }
+        ];
+
+        let currentSlide = 0;
+
+        function updateCarousel() {
+            const carouselContent = document.getElementById('carouselContent');
+            const slide = carouselSlides[currentSlide];
+            carouselContent.innerHTML = `
+                <div class="w-full md:w-1/2 mb-6 md:mb-0 md:pr-8">
+                    <img src="${slide.image}" alt="${slide.title}" class="rounded-lg shadow-lg object-cover w-full carousel-image">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-2 text-primary">${slide.title}</h2>
+                    <div class="w-16 h-1 bg-secondary mb-4"></div>
+                    <p class="text-base md:text-lg text-gray-700 mb-6">${slide.text}</p>
+                </div>
+            `;
+        }
+
+        document.getElementById('prevSlide').addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + carouselSlides.length) % carouselSlides.length;
+            updateCarousel();
+        });
+
+        document.getElementById('nextSlide').addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % carouselSlides.length;
+            updateCarousel();
+        });
+
+        // Initialize carousel
+        updateCarousel();
+
+        // Testimonial data
+        const testimonials = [
+            {
+                text: `"Navigating the complexities of finding accommodation was a daunting task for me, especially when all the communication and transactions were through online platforms. However, the support I received from I2F was invaluable. They addressed my concerns promptly and ensured that my needs were met throughout the process. I am very satisfied with the level of service provided and appreciate their dedication to making this experience as seamless as possible. Thank you I2F!"`,
+                author: "Kalamathi Sivasankar, IESEG School of Management",
+                school: "",
+                linkedin: "https://www.linkedin.com/in/kalamathi-sivasankar-10ba0b262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            },
+            {
+                text: `"I2F Student Services made my dream of studying in France a reality. Their guidance throughout the application process, visa procedures, and even after I arrived in Paris was invaluable. I couldn't have done it without them!"`,
+                author: "John Doe",
+                school: "Sorbonne University",
+                linkedin: "https://www.linkedin.com/in/johndoe"
+            },
+            {
+                text: `"The team at I2F went above and beyond to ensure my transition to studying in France was smooth. From university selection to settling in, they were there every step of the way. Highly recommended!"`,
+                author: "Jane Smith",
+                school: "Sciences Po",
+                linkedin: "https://www.linkedin.com/in/janesmith"
+            }
+        ];
+
+        function updateTestimonials() {
+            const testimonialContent = document.getElementById('testimonialContent');
+            testimonialContent.innerHTML = testimonials.map(testimonial => `
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="text-gray-600 mb-4">${testimonial.text}</p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="font-semibold text-primary">${testimonial.author}</p>
+                            <p class="text-sm text-gray-500">${testimonial.school}</p>
+                        </div>
+                        <a href="${testimonial.linkedin}" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-600">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Initialize testimonials
+        updateTestimonials();
+
+        // Netlify Identity
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+
